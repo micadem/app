@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>CGPA CALCULATOR</title> 
     </head>
 
@@ -119,8 +120,63 @@
                 });
 
             });
-        </script>
+            $(document).ready(function(){
+                $("#unit-11,#gp-11").keyup(function(){
 
+                    var total =0;
+                    var x = Number($("#unit-11").val());
+                    var y = Number($("#gp-11").val());
+                    var  total  = x * y;
+                    $("#WGP-11").val(total);
+                });
+
+            });
+            $(document).ready(function(){
+                $("#unit-12,#gp-12").keyup(function(){
+
+                    var total =0;
+                    var x = Number($("#unit-12").val());
+                    var y = Number($("#gp-12").val());
+                    var  total  = x * y;
+                    $("#WGP-12").val(total);
+                });
+
+            });
+            $(document).ready(function(){
+                $("#unit-13,#gp-13").keyup(function(){
+
+                    var total =0;
+                    var x = Number($("#unit-133").val());
+                    var y = Number($("#gp-13").val());
+                    var  total  = x * y;
+                    $("#WGP-13").val(total);
+                });
+
+            });
+            $(document).ready(function(){
+                $("#unit-14,#gp-14").keyup(function(){
+
+                    var total =0;
+                    var x = Number($("#unit-14").val());
+                    var y = Number($("#gp-14").val());
+                    var  total  = x * y;
+                    $("#WGP-14").val(total);
+                });
+
+            });
+            $(document).ready(function(){
+                $("#unit-15,#gp-15").keyup(function(){
+
+                    var total =0;
+                    var x = Number($("#unit-15").val());
+                    var y = Number($("#gp-15").val());
+                    var  total  = x * y;
+                    $("#WGP-15").val(total);
+                });
+
+            });
+        </script>
+        <div class="container">
         <table width="80%">
             <thead>
                 <th>Course Code</th>
@@ -130,7 +186,7 @@
             </thead>
 
             <tbody>
-                <tr>
+                <tr class="row">
                     <td><input type="text" id="course-code"></td>
                     <td><input type="text" id="unit-1"></td>
                     <td><input type="text" id="gp-1"></td>
@@ -191,8 +247,38 @@
                     <td><input type="text" id="gp-10"></td>
                     <td><input type="text" id="WGP-10" disabled></td>
                 </tr>
-                
+                <tr>
+                    <td><input type="text" id="course-code"></td>
+                    <td><input type="text" id="unit-11"></td>
+                    <td><input type="text" id="gp-11"></td>
+                    <td><input type="text" id="WGP-11" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="course-code"></td>
+                    <td><input type="text" id="unit-12"></td>
+                    <td><input type="text" id="gp-12"></td>
+                    <td><input type="text" id="WGP-12" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="course-code"></td>
+                    <td><input type="text" id="unit-13"></td>
+                    <td><input type="text" id="gp-13"></td>
+                    <td><input type="text" id="WGP-13" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="course-code"></td>
+                    <td><input type="text" id="unit-14"></td>
+                    <td><input type="text" id="gp-14"></td>
+                    <td><input type="text" id="WGP-14" disabled></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="course-code"></td>
+                    <td><input type="text" id="unit-15"></td>
+                    <td><input type="text" id="gp-15"></td>
+                    <td><input type="text" id="WGP-15" disabled></td>
+                </tr>
             </tbody>
         </table>
+    </div>
     </body>
 </html>
